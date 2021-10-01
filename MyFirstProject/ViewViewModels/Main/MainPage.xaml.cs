@@ -1,4 +1,5 @@
-﻿using MyFirstProject.ViewViewModels.Main;
+﻿using MyFirstProject.ViewViewModels.Listview;
+using MyFirstProject.ViewViewModels.Main;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,11 @@ namespace MyFirstProject
         {
             InitializeComponent();
             BindingContext = new MainPageViewModel();
+        }
+
+        private async void DoSomething(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListviewMenuView());
         }
     }
 }
