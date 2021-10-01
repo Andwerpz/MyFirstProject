@@ -24,19 +24,16 @@
             <Button Grid.Row="0"
                    Grid.Column="0"
                    Text="Layouts"
-                    Clicked="Layouts"/>
+                    Command="{Binding OnLayoutsMenuClicked}"/>
             <Button Grid.Row="0"
                    Grid.Column="1"
-                   Text="Image"
-                    Clicked="Images"/>
+                   Text="Image"/>
             <Button Grid.Row="1"
                    Grid.Column="0"
-                   Text="Lists"
-                   Clicked="Lists"/>
+                   Text="Lists"/>
             <Button Grid.Row="1"
                    Grid.Column="1"
-                   Text="Controls"
-                    Clicked="Controls"/>
+                   Text="Controls"/>
         </Grid>
 
     </StackLayout>

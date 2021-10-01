@@ -21,21 +21,6 @@ namespace MyFirstProject
             BindingContext = new MainPageViewModel();
         }
 
-        private async void Lists(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ListviewMenuView());
-        }
-        private async void Controls(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ControlsMenuView());
-        }
-        private async void Images(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ImageMenuView());
-        }
-        private async void Layouts(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new LayoutsMenuView());
-        }
+        
     }
 }

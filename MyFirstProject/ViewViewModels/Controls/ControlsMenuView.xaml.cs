@@ -15,6 +15,7 @@ namespace MyFirstProject.ViewViewModels.Controls
         public ControlsMenuView()
         {
             InitializeComponent();
+            
         }
     }
 }
