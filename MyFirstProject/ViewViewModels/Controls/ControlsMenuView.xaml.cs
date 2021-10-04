@@ -15,7 +15,8 @@ namespace MyFirstProject.ViewViewModels.Controls
         public ControlsMenuView()
         {
             InitializeComponent();
-            
+            BindingContext = new ControlsMenuViewModel();
+
         }
     }
 }

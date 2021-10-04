@@ -15,6 +15,7 @@ namespace MyFirstProject.ViewViewModels.Listview
         public ListviewMenuView()
         {
             InitializeComponent();
+            BindingContext = new ListviewMenuViewModel();
         }
     }
 }

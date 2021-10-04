@@ -15,7 +15,7 @@ namespace MyFirstProject.Models
 
         public static string ControlsMenuTitle { get; } = "Controls";
 
-        public static string ImagesMenuTitle { get; } = "Images";
+        public static string ImageMenuTitle { get; } = "Images";
 
         public static string LayoutsMenuTitle { get; } = "Layouts";
 

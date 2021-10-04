@@ -15,6 +15,7 @@ namespace MyFirstProject.ViewViewModels.Layouts
         public LayoutsMenuView()
         {
             InitializeComponent();
+            BindingContext = new LayoutsMenuViewModel();
         }
     }
 }
