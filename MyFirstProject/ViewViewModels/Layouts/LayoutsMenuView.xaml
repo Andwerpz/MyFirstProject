@@ -4,17 +4,15 @@
              x:Class="MyFirstProject.ViewViewModels.Layouts.LayoutsMenuView"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand"
-                     HorizontalOptions="CenterAndExpand">
+        <StackLayout Margin="0,20,0,20">
             
             <Label Text="Welcome to Layouts!"
-                   VerticalOptions="Center"
                    HorizontalOptions="Center"/>
 
-            <Button Text="Absolute Layout"
+            <Button Text="Absolute"
                     Command="{Binding OnAbsoluteLayoutClicked}"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"/>
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"/>
             
             
         </StackLayout>
