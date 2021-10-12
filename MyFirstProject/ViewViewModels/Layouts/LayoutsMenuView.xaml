@@ -13,8 +13,11 @@
                     Command="{Binding OnAbsoluteLayoutClicked}"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand"/>
-            
-            
+            <Button Text="Relative"
+                    Command="{Binding OnRelativeLayoutClicked}"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
