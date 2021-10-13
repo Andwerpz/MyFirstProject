@@ -13,6 +13,10 @@
                     Command="{Binding OnAbsoluteLayoutClicked}"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Absolute Project"
+                    Command="{Binding OnAbsoluteLayoutProjectClicked}"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"/>
             <Button Text="Relative"
                     Command="{Binding OnRelativeLayoutClicked}"
                     VerticalOptions="CenterAndExpand"
