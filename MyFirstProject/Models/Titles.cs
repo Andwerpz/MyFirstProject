@@ -16,5 +16,6 @@ namespace MyFirstProject.Models
         public static string ListviewMenuTitle { get; } = "Listview";
         public static string AbsoluteLayoutTitle { get; } = "Absolute Layout";
         public static string RelativeLayoutTitle { get; } = "Relative Layout";
+        public static string RelativeLayoutProjectTitle { get; } = "Relative Layout Project";
     }
 }

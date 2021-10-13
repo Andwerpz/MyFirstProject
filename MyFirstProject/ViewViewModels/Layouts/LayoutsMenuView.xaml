@@ -5,18 +5,15 @@
              Title="{Binding Title}">
     <ContentPage.Content>
         <StackLayout Margin="0,20,0,20">
-            
+
             <Label Text="Welcome to Layouts!"
                    HorizontalOptions="Center"/>
-
             <Button Text="Absolute"
-                    Command="{Binding OnAbsoluteLayoutClicked}"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="CenterAndExpand"/>
+                    Command="{Binding OnAbsoluteLayoutClicked}"/>
             <Button Text="Relative"
-                    Command="{Binding OnRelativeLayoutClicked}"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="CenterAndExpand"/>
+                    Command="{Binding OnRelativeLayoutClicked}"/>
+            <Button Text="Relative Project"
+                    Command="{Binding OnRelativeLayoutProjectClicked}"/>
 
         </StackLayout>
     </ContentPage.Content>
