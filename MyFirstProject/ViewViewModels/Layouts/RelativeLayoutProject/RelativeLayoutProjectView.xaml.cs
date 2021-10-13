@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MyFirstProject.ViewViewModels.Layouts.Relative
+namespace MyFirstProject.ViewViewModels.Layouts.RelativeLayoutProject
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RelativeLayoutView : ContentPage
+    public partial class RelativeLayoutProjectView : ContentPage
     {
-        public RelativeLayoutView()
+        public RelativeLayoutProjectView()
         {
             InitializeComponent();
-            BindingContext = new RelativeLayoutViewModel();
+            BindingContext = new RelativeLayoutProjectViewModel();
         }
     }
 }
