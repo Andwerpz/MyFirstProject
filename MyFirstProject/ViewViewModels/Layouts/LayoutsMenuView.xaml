@@ -9,17 +9,9 @@
             <Label Text="Welcome to Layouts!"
                    HorizontalOptions="Center"/>
             <Button Text="Absolute"
-<<<<<<< HEAD
-                    Command="{Binding OnAbsoluteLayoutClicked}"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="CenterAndExpand"/>
-            <Button Text="Absolute Project"
-                    Command="{Binding OnAbsoluteLayoutProjectClicked}"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="CenterAndExpand"/>
-=======
                     Command="{Binding OnAbsoluteLayoutClicked}"/>
->>>>>>> 3132ae2dffea11de38cd5e2339efc618e1d68522
+            <Button Text="Absolute Project"
+                    Command="{Binding OnAbsoluteLayoutProjectClicked}"/>
             <Button Text="Relative"
                     Command="{Binding OnRelativeLayoutClicked}"/>
             <Button Text="Relative Project"
