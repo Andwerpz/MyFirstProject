@@ -12,7 +12,7 @@
                    FontSize="Large"
                    FontAttributes="Bold"
                    HorizontalOptions="CenterAndExpand"/>
-            <Grid Margin="30,80,20,20"
+            <Grid Margin="20,80,20,20"
                   AbsoluteLayout.LayoutBounds="0,0, 1, 0.4"
                   AbsoluteLayout.LayoutFlags="All">
                 <Grid.ColumnDefinitions>
