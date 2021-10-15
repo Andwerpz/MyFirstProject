@@ -4,15 +4,15 @@
              x:Class="MyFirstProject.ViewViewModels.Layouts.AbsoluteLayoutProject.AbsoluteLayoutProjectView"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <AbsoluteLayout>
+        <AbsoluteLayout VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand">
             <Label Text="Absolute!"
-                   TextColor="Black"
                    AbsoluteLayout.LayoutBounds="0.5,0,100,25"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
                    FontSize="Large"
                    FontAttributes="Bold"
                    HorizontalOptions="CenterAndExpand"/>
-            <Grid Margin="30,80,20,20"
+            <Grid Margin="20,80,20,20"
                   AbsoluteLayout.LayoutBounds="0,0, 1, 0.4"
                   AbsoluteLayout.LayoutFlags="All">
                 <Grid.ColumnDefinitions>
@@ -31,12 +31,14 @@
                         BackgroundColor="Bisque"
                         Text="01"
                         FontSize="Medium"
+                        TextColor="Black"
                         Margin="5,10"/>
                 <Button Grid.Row="0"
                         Grid.Column="1"
                         BackgroundColor="Chartreuse"
                         Text="02"
                         FontSize="Medium"
+                        TextColor="Black"
                         Margin="5,10"/>
                 <Button Grid.Row="0"
                         Grid.Column="2"
@@ -81,6 +83,7 @@
                         BackgroundColor="LightSteelBlue"
                         Text="09"
                         FontSize="Medium"
+                        TextColor="Black"
                         Margin="5,10"/>
                 <Button Grid.Row="2"
                         Grid.Column="1"
@@ -99,6 +102,7 @@
                         BackgroundColor="PapayaWhip"
                         Text="12"
                         FontSize="Medium"
+                        TextColor="Black"
                         Margin="5,10"/>
             </Grid>
         </AbsoluteLayout>

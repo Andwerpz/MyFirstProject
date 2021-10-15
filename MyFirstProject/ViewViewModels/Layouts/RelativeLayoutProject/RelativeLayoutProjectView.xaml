@@ -4,10 +4,10 @@
              x:Class="MyFirstProject.ViewViewModels.Layouts.RelativeLayoutProject.RelativeLayoutProjectView"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <RelativeLayout BackgroundColor="LawnGreen">
+            <Label Text="Relative!"
+                   HorizontalOptions="CenterAndExpand"/>
+            <BoxView BackgroundColor="Red"/>
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>
