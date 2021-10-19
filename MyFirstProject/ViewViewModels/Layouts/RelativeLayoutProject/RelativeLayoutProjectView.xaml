@@ -42,8 +42,8 @@
             <BoxView Color="White"
                      RelativeLayout.WidthConstraint="{ConstraintExpression Type=Constant, Property=Width, Constant=25}"
                      RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Property=Height, Constant=25}"
-                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, ElementName=OuterBox, Property=Width, Factor=0.5, Constant=90}"
-                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, ElementName=OuterBox, Property=Height, Factor=0.5, Constant=225}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=OuterBox, Property=Width, Factor=5}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=OuterBox, Property=Height, Factor=12}"
                      />
         </RelativeLayout>
     </ContentPage.Content>
