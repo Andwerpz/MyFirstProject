@@ -4,10 +4,47 @@
              x:Class="MyFirstProject.ViewViewModels.Layouts.RelativeLayoutProject.RelativeLayoutProjectView"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <RelativeLayout BackgroundColor="LawnGreen">
-            <Label Text="Relative!"
-                   HorizontalOptions="CenterAndExpand"/>
-            <BoxView BackgroundColor="Red"/>
+        <RelativeLayout BackgroundColor="Green">
+            <Label Text="Relative"
+                   HorizontalTextAlignment ="Center"
+                   VerticalTextAlignment ="Center"
+                   FontSize="27"
+                   TextColor="Black"
+                   WidthRequest="100" 
+                   HeightRequest="100"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-50}"
+                   />
+            <BoxView Color="Black"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=Constant, Property=Width, Constant=50}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Property=Height, Constant=50}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.25, Constant=-25}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.25, Constant=200}"
+                     />
+            <BoxView Color="Red"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=Constant, Property=Width, Constant=50}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Property=Height, Constant=50}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.25, Constant=-25}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.75, Constant=25}"
+                     />
+            <BoxView Color="Yellow"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=Constant, Property=Width, Constant=50}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Property=Height, Constant=50}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.75, Constant=-25}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.25, Constant=200}"
+                     />
+            <BoxView Color="Pink"
+                     x:Name="OuterBox"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=Constant, Property=Width, Constant=50}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Property=Height, Constant=50}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.75, Constant=-25}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.75, Constant=25}"
+                     />
+            <BoxView Color="White"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=Constant, Property=Width, Constant=25}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=Constant, Property=Height, Constant=25}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, ElementName=OuterBox, Property=Width, Factor=0.5, Constant=90}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, ElementName=OuterBox, Property=Height, Factor=0.5, Constant=225}"
+                     />
         </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>
