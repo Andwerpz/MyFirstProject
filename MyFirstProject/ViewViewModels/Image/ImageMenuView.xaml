@@ -10,6 +10,8 @@
                 HorizontalOptions="CenterAndExpand" />
             <Button Text="Embedded Image"
                     Command="{Binding OnEmbeddedImageClicked}"/>
+            <Button Text="Embedded Image Project"
+                    Command="{Binding OnEmbeddedImageProjectClicked}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -19,6 +19,7 @@ namespace MyFirstProject.Models
         public static string RelativeLayoutTitle { get; } = "Relative Layout";
         public static string RelativeLayoutProjectTitle { get; } = "Relative Layout Project";
         public static string EmbeddedImageTitle { get; } = "Embedded Image";
+        public static string EmbeddedImageProjectTitle { get; } = "Embedded Image Project";
 
     }
 }
