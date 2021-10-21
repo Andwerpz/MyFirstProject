@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstProject.ViewViewModels.Image.ImageMenuView"
+             x:Class="MyFirstProject.ViewViewModels.Image.EmbeddedImage.EmbeddedImageView"
              Title="{Binding Title}">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Images!"
+            <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button Text="Embedded Image"
-                    Command="{Binding OnEmbeddedImageClicked}"/>
+            <Image Source="local:Images nut.jpg"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
