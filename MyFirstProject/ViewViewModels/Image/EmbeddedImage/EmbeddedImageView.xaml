@@ -4,9 +4,13 @@
              x:Class="MyFirstProject.ViewViewModels.Image.EmbeddedImage.EmbeddedImageView"
              Title="{Binding Title}">
 
-    <StackLayout>
+    <StackLayout HorizontalOptions="CenterAndExpand"
+                 VerticalOptions="CenterAndExpand"
+                 >
 
         <Image Source="{Binding EmbeddedImageSrc}"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
                />
 
     </StackLayout>

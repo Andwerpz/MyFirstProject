@@ -16,7 +16,7 @@
                    HorizontalOptions="CenterAndExpand"
                    />
 
-            <Button AbsoluteLayout.LayoutBounds=".125, .1, .2, 0.08"
+            <Button AbsoluteLayout.LayoutBounds=".125, .1, .2, 0.1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="Bisque"
                     Text="01"
@@ -25,7 +25,7 @@
                     Margin="5,10"
                     />
 
-            <Button AbsoluteLayout.LayoutBounds=".375, .1, .2, 0.08"
+            <Button AbsoluteLayout.LayoutBounds=".375, .1, .2, 0.1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="Chartreuse"
                     Text="02"
@@ -34,7 +34,7 @@
                     Margin="5,10"
                     />
 
-            <Button AbsoluteLayout.LayoutBounds=".625, .1, .2, 0.08"
+            <Button AbsoluteLayout.LayoutBounds=".625, .1, .2, 0.1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="Tan"
                     Text="03"
@@ -42,7 +42,7 @@
                     Margin="5,10"
                     />
 
-            <Button AbsoluteLayout.LayoutBounds=".875, .1, .2, 0.08"
+            <Button AbsoluteLayout.LayoutBounds=".875, .1, .2, 0.1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="Fuchsia"
                     Text="04"
@@ -50,7 +50,7 @@
                     Margin="5,10"
                     />
 
-            <Button AbsoluteLayout.LayoutBounds=".125, .175, .2, 0.08"
+            <Button AbsoluteLayout.LayoutBounds=".125, .2, .2, 0.1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="DarkSlateGray"
                     Text="05"
@@ -59,7 +59,7 @@
                     Margin="5,10"
                     />
 
-            <Button AbsoluteLayout.LayoutBounds=".375, .175, .2, 0.08"
+            <Button AbsoluteLayout.LayoutBounds=".375, .2, .2, 0.1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="Indigo"
                     Text="06"
@@ -68,7 +68,7 @@
                     Margin="5,10"
                     />
 
-            <Button AbsoluteLayout.LayoutBounds=".625, .175, .2, 0.08"
+            <Button AbsoluteLayout.LayoutBounds=".625, .2, .2, 0.1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="HotPink"
                     Text="07"
@@ -76,7 +76,7 @@
                     Margin="5,10"
                     />
 
-            <Button AbsoluteLayout.LayoutBounds=".875, .175, .2, 0.08"
+            <Button AbsoluteLayout.LayoutBounds=".875, .2, .2, 0.1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="MediumVioletRed"
                     Text="08"
@@ -84,7 +84,7 @@
                     Margin="5,10"
                     />
 
-            <Button AbsoluteLayout.LayoutBounds=".125, .25, .2, 0.08"
+            <Button AbsoluteLayout.LayoutBounds=".125, .3, .2, 0.1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="LightSteelBlue"
                     Text="09"
@@ -93,7 +93,7 @@
                     Margin="5,10"
                     />
 
-            <Button AbsoluteLayout.LayoutBounds=".375, .25, .2, 0.08"
+            <Button AbsoluteLayout.LayoutBounds=".375, .3, .2, 0.1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="LimeGreen"
                     Text="10"
@@ -101,7 +101,7 @@
                     Margin="5,10"
                     />
 
-            <Button AbsoluteLayout.LayoutBounds=".625, .25, .2, 0.08"
+            <Button AbsoluteLayout.LayoutBounds=".625, .3, .2, 0.1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="DarkCyan"
                     Text="11"
@@ -109,7 +109,7 @@
                     Margin="5,10"
                     />
 
-            <Button AbsoluteLayout.LayoutBounds=".875, .25, .2, 0.08"
+            <Button AbsoluteLayout.LayoutBounds=".875, .3, .2, 0.1"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="PapayaWhip"
                     Text="12"
