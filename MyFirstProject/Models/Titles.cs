@@ -21,6 +21,6 @@ namespace MyFirstProject.Models
         public static string EmbeddedImageTitle { get; } = "Embedded Image";
         public static string EmbeddedImageProjectTitle { get; } = "Embedded Image Project";
         public static string UrlImageTitle { get; } = "URL Image";
-        
+        public static string UrlImageProjectTitle { get; } = "URL Image";
     }
 }

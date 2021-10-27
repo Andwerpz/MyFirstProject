@@ -14,7 +14,9 @@
                 Command="{Binding OnEmbeddedImageProjectClicked}"/>
         <Button Text="URL Image"
                 Command="{Binding OnUrlImageClicked}"/>
-        
+        <Button Text="URL Image Project"
+                Command="{Binding OnUrlImageProjectClicked}"/>
+
     </StackLayout>
     
 </ContentPage>
