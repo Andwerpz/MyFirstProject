@@ -3,15 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstProject.ViewViewModels.Image.ImageMenuView"
              Title="{Binding Title}">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Images!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Embedded Image"
-                    Command="{Binding OnEmbeddedImageClicked}"/>
-            <Button Text="Embedded Image Project"
-                    Command="{Binding OnEmbeddedImageProjectClicked}"/>
-        </StackLayout>
-    </ContentPage.Content>
+
+    <StackLayout Margin="0,20,0,20">
+        
+        <Label Text="Welcome to Images!" 
+                HorizontalOptions="Center" />
+        <Button Text="Embedded Image"
+                Command="{Binding OnEmbeddedImageClicked}"/>
+        <Button Text="Embedded Image Project"
+                Command="{Binding OnEmbeddedImageProjectClicked}"/>
+        <Button Text="URL Image"
+                Command="{Binding OnUrlImageClicked}"/>
+        
+    </StackLayout>
+    
 </ContentPage>

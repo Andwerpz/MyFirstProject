@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstProject.ViewViewModels.Image.EmbeddedImage.EmbeddedImageView"
+             x:Class="MyFirstProject.ViewViewModels.Image.UrlImage.UrlImageView"
              Title="{Binding Title}">
-
+    
     <StackLayout HorizontalOptions="CenterAndExpand"
-                 VerticalOptions="CenterAndExpand"
-                 >
+                 VerticalOptions="CenterAndExpand">
 
-        <Image Source="{Binding EmbeddedImageSrc}"/>
+        <Image Source="https://placeimg.com/1000/1000/nature"/>
 
     </StackLayout>
-
+    
 </ContentPage>
