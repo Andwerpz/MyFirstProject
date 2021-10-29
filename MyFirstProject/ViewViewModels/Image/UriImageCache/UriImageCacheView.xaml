@@ -5,7 +5,7 @@
              Title="{Binding Title}">
     
     <StackLayout>
-            <Image Source="{Binding ImageSrc}" />
+            <Image Source="{Binding UriImageSrc}" />
     </StackLayout>
    
 </ContentPage>
