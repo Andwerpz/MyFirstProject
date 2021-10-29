@@ -20,7 +20,9 @@ namespace MyFirstProject.Models
         public static string RelativeLayoutProjectTitle { get; } = "Relative Layout Project";
         public static string EmbeddedImageTitle { get; } = "Embedded Image";
         public static string EmbeddedImageProjectTitle { get; } = "Embedded Image Project";
-        public static string UrlImageTitle { get; } = "URL Image";
-        public static string UrlImageProjectTitle { get; } = "URL Image";
+        public static string UriImageTitle { get; } = "URI Image";
+        public static string UriImageProjectTitle { get; } = "URI Image Project";
+        public static string UriImageCacheTitle { get; } = "URI Image Cache";
+        public static string ImageTitle { get; } = "Image Page";
     }
 }

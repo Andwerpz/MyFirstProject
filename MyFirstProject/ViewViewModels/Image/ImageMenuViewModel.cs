@@ -2,11 +2,9 @@
 using MyFirstProject.ViewViewModel;
 using MyFirstProject.ViewViewModels.Image.EmbeddedImage;
 using MyFirstProject.ViewViewModels.Image.EmbeddedImageProject;
-using MyFirstProject.ViewViewModels.Image.UrlImage;
-using MyFirstProject.ViewViewModels.Image.UrlImageProject;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using MyFirstProject.ViewViewModels.Image.UriImage;
+using MyFirstProject.ViewViewModels.Image.UriImageCache;
+using MyFirstProject.ViewViewModels.Image.UriImageProject;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -16,30 +14,35 @@ namespace MyFirstProject.ViewViewModels.Image
     {
         public ICommand OnEmbeddedImageClicked { get; set; }
         public ICommand OnEmbeddedImageProjectClicked { get; set; }
-        public ICommand OnUrlImageClicked { get; set; }
-        public ICommand OnUrlImageProjectClicked { get; set; }
+        public ICommand OnUriImageClicked { get; set; }
+        public ICommand OnUriImageProjectClicked { get; set; }
+        public ICommand OnUriImageCacheClicked { get; set; }
 
         public ImageMenuViewModel()
         {
             Title = Titles.ImageMenuTitle;
             OnEmbeddedImageClicked = new Command(OnEmbeddedImageClickedAsync);
             OnEmbeddedImageProjectClicked = new Command(OnEmbeddedImageProjectClickedAsync);
-            OnUrlImageClicked = new Command(OnUrlImageClickedAsync);
-            OnUrlImageProjectClicked = new Command(OnUrlImageProjectClickedAsync);
+            OnUriImageClicked = new Command(OnUriImageClickedAsync);
+            OnUriImageProjectClicked = new Command(OnUriImageProjectClickedAsync);
+            OnUriImageCacheClicked = new Command(OnUriImageCacheClickedAsync);
         }
 
-        private void OnUrlImageProjectClickedAsync(object obj)
+        private async void OnUriImageCacheClickedAsync(object obj)
         {
-            throw new NotImplementedException();
+            await Application.Current.MainPage.Navigation.PushAsync(new UriImageCacheView());
         }
-
-        private async void OnUrlImageClickedAsync(object obj)
+        private async void OnUriImageProjectClickedAsync(object obj)
         {
-        await Application.Current.MainPage.Navigation.PushAsync(new UrlImageView());
+            await Application.Current.MainPage.Navigation.PushAsync(new UriImageProjectView());
+        }
+        private async void OnUriImageClickedAsync(object obj)
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new UriImageView());
         }
         private async void OnEmbeddedImageClickedAsync(object obj)
         {
-        await Application.Current.MainPage.Navigation.PushAsync(new EmbeddedImageView());
+            await Application.Current.MainPage.Navigation.PushAsync(new EmbeddedImageView());
         }
         private async void OnEmbeddedImageProjectClickedAsync(object obj)
         {

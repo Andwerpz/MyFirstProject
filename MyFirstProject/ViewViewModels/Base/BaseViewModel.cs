@@ -19,16 +19,10 @@ namespace MyFirstProject.ViewViewModel
         }
 
         string title = string.Empty;
-        ImageSource image = null;
         public string Title
         {
             get { return title; }
             set { SetProperty(ref title, value); }
-        }
-        public ImageSource Image
-        {
-            get { return image; }
-            set { SetProperty(ref image, value); }
         }
 
         protected bool SetProperty<T>(ref T backingStore, T value,

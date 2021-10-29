@@ -24,10 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewViewModels\Base\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Update="ViewViewModels\Controls\ControlsMenuView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -40,10 +36,13 @@
     <EmbeddedResource Update="ViewViewModels\Image\ImageMenuView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ViewViewModels\Image\UrlImageProject\UrlImageProjectViewModel.xaml">
+    <EmbeddedResource Update="ViewViewModels\Image\UriImageCache\UriImageCacheView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ViewViewModels\Image\UrlImage\UrlImageView.xaml">
+    <EmbeddedResource Update="ViewViewModels\Image\UriImageProject\UriImageProjectView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Image\UriImage\UriImageView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModels\Layouts\AbsoluteLayoutProject\AbsoluteLayoutProjectView.xaml">

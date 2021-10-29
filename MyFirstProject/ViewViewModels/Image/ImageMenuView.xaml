@@ -12,10 +12,12 @@
                 Command="{Binding OnEmbeddedImageClicked}"/>
         <Button Text="Embedded Image Project"
                 Command="{Binding OnEmbeddedImageProjectClicked}"/>
-        <Button Text="URL Image"
-                Command="{Binding OnUrlImageClicked}"/>
-        <Button Text="URL Image Project"
-                Command="{Binding OnUrlImageProjectClicked}"/>
+        <Button Text="URI Image"
+                Command="{Binding OnUriImageClicked}"/>
+        <Button Text="URI Image Project"
+                Command="{Binding OnUriImageProjectClicked}"/>
+        <Button Text="URI Image Cache"
+                Command="{Binding OnUriImageCacheClicked}"/>
 
     </StackLayout>
     
