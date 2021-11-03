@@ -25,5 +25,6 @@ namespace MyFirstProject.Models
         public static string UriImageTitle { get; } = "URI Image";
         public static string UriImageProjectTitle { get; } = "URI Image Project";
         public static string UriImageCacheTitle { get; } = "URI Image Cache";
+        public static string ActivityIndicatorTitle { get; } = "Activity Indicator";
     }
 }

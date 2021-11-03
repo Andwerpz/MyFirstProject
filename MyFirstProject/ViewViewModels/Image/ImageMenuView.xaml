@@ -18,6 +18,9 @@
                 Command="{Binding OnUriImageProjectClicked}"/>
         <Button Text="URI Image Cache"
                 Command="{Binding OnUriImageCacheClicked}"/>
+        <Button Text="Activity Indicator"
+                Command="{Binding OnActivityIndicatorClicked}"/>
+        
 
     </StackLayout>
     

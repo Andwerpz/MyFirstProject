@@ -27,6 +27,9 @@
     <EmbeddedResource Update="ViewViewModels\Controls\ControlsMenuView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Image\ActivityIndicator\ActivityIndicatorView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModels\Image\EmbeddedImageProject\EmbeddedImageProjectView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

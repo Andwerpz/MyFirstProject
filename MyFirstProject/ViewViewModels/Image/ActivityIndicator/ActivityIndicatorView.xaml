@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModels.Image.ActivityIndicator.ActivityIndicatorView"
+             Title="{Binding Title}">
+
+    <AbsoluteLayout VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand">
+        
+        <ActivityIndicator  IsEnabled="True"
+                            IsVisible="True"
+                            BindingContext="ActivityIndicatorImageSrc"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            IsRunning="{Binding Source={x:Reference image}, Path = IsLoading}"/>
+        
+        <Image  x:Name="image"
+                Source="{Binding ActivityIndicatorImageSrc}"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"/>
+        
+    </AbsoluteLayout>
+    
+</ContentPage>
