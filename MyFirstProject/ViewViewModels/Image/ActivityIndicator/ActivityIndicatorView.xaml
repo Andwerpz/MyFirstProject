@@ -9,7 +9,6 @@
         
         <ActivityIndicator  IsEnabled="True"
                             IsVisible="True"
-                            BindingContext="ActivityIndicatorImageSrc"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
                             IsRunning="{Binding Source={x:Reference image}, Path = IsLoading}"/>
