@@ -8,6 +8,8 @@ namespace MyFirstProject.Models
     {
         public string Name { get; set; }
 
+        public Person() { 
+        }
         public Person(string n)
         {
             Name = n;
