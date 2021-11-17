@@ -13,23 +13,30 @@
         
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <Grid Padding="10" Margin="12">
+                <Grid Padding="20, 5, 20, 10" Margin="12">
 
                     <Grid.RowDefinitions>
                         <RowDefinition Height="0.5"/>
                     </Grid.RowDefinitions>
 
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        
+                        <BoxView Grid.Row="0"
+                                 Grid.Column="0"
+                                 Color="DarkOrchid"/>
 
+                    </StackLayout>
+                    
                     <StackLayout Padding="10" x:DataType="model:Person">
+
                         <Label Text="{Binding Name}"
                                Grid.Column="0"
                                Grid.Row="0"
                                LineBreakMode="NoWrap"
                                FontSize="16"
-                               FontAttributes="Bold"/>
+                               FontAttributes="Bold"
+                               TextColor="White"/>
+
                     </StackLayout>
 
                 </Grid>

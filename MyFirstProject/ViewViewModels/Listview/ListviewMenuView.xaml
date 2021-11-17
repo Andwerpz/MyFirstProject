@@ -4,10 +4,9 @@
              x:Class="MyFirstProject.ViewViewModels.Listview.ListviewMenuView"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Listview!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Margin="0,20,0,20">
+            <Label Text="Welcome to Listview!" 
+                HorizontalOptions="Center" />
             <Button Text="ListView Page"
                     Command="{Binding OnListViewPageClicked}"/>
         </StackLayout>

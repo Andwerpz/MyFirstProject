@@ -6,7 +6,7 @@
 
     <StackLayout Margin="0,20,0,20">
         
-        <Label Text="Welcome to Images!" 
+        <Label  Text="Welcome to Images!" 
                 HorizontalOptions="Center" />
         <Button Text="Embedded Image"
                 Command="{Binding OnEmbeddedImageClicked}"/>
