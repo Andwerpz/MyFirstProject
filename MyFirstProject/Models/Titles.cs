@@ -28,5 +28,8 @@ namespace MyFirstProject.Models
         public static string ActivityIndicatorTitle { get; } = "Activity Indicator";
         //ListView Pages
         public static string ListViewPageTitle { get; } = "ListView Page";
+        public static string ListViewImagesTitle { get; } = "ListView Images";
+        public static string ListViewButtonsTitle { get; } = "ListView Buttons";
+        public static string ListViewIconsTitle { get; } = "ListView Icons";
     }
 }

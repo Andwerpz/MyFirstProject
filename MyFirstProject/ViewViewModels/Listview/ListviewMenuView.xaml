@@ -5,10 +5,20 @@
              Title="{Binding Title}">
     <ContentPage.Content>
         <StackLayout Margin="0,20,0,20">
-            <Label Text="Welcome to Listview!" 
-                HorizontalOptions="Center" />
+            <Label  Text="Welcome to Listview!" 
+                            HorizontalOptions="Center" />
+
             <Button Text="ListView Page"
-                    Command="{Binding OnListViewPageClicked}"/>
+                            Command="{Binding OnListViewPageClicked}"/>
+
+            <Button Text="ListView Images"
+                            Command="{Binding OnListViewImagesClicked}"/>
+
+            <Button Text="ListView Buttons"
+                            Command="{Binding OnListViewButtonsClicked}"/>
+
+            <Button Text="ListView Icons"
+                            Command="{Binding OnListViewIconsClicked}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
