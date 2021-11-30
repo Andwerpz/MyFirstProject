@@ -6,53 +6,64 @@
              x:Class="MyFirstProject.ViewViewModels.Listview.ListViewImages.ListViewImagesView"
              Title="{Binding Title}">
 
-    <CollectionView x:Name="ItemListView"
-                    ItemsSource="{Binding Nuts}"
-                    SelectionMode="None"
-                    ItemsLayout="VerticalList">
+    <StackLayout HorizontalOptions="CenterAndExpand">
 
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Grid Padding="20, 5, 20, 10" Margin="12">
+        <Label Text="Nut"
+                           LineBreakMode="NoWrap"
+                           FontSize="36"
+                           FontAttributes="Bold"
+                           TextColor="Cyan"
+                           HorizontalOptions="CenterAndExpand"/>
 
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="110"/>
-                    </Grid.RowDefinitions>
+        <CollectionView x:Name="ItemListView"
+                        ItemsSource="{Binding Nuts}"
+                        SelectionMode="None"
+                        ItemsLayout="VerticalList"
+                        HorizontalOptions="CenterAndExpand">
 
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
 
-                    <StackLayout Padding="0" x:DataType="model:Nut"
+                    <Grid Padding="20, 5, 20, 10" Margin="12">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="110"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Padding="0" x:DataType="model:Nut"
                                  Grid.Column="0">
 
-                        <Image Source="{Binding Image}"/>
+                            <Image Source="{Binding Image}"/>
 
-                    </StackLayout>
 
-                    <StackLayout Padding="0" x:DataType="model:Nut"
+                        </StackLayout>
+
+                        <StackLayout Padding="0" x:DataType="model:Nut"
                                  Grid.Column="1">
 
-
-                        <Label Text="{Binding Name}"
+                            <Label Text="{Binding Name}"
                                LineBreakMode="NoWrap"
                                FontSize="16"
-                               FontAttributes="Bold"
-                               TextColor="White"/>
+                               FontAttributes="Bold"/>
 
-                        <Label Text="{Binding Description}"
+                            <Label Text="{Binding Description}"
                                LineBreakMode="NoWrap"
-                               FontSize="12"
-                               TextColor="White"/>
+                               FontSize="12"/>
 
-                    </StackLayout>
+                        </StackLayout>
 
-                </Grid>
+                    </Grid>
 
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
 
-    </CollectionView>
+        </CollectionView>
+    </StackLayout>
+    
 
 </ContentPage>
