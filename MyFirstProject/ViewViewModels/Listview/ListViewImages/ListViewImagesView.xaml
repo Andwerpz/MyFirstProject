@@ -16,7 +16,7 @@
                 <Grid Padding="20, 5, 20, 10" Margin="12">
 
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="110"/>
                     </Grid.RowDefinitions>
 
                     <Grid.ColumnDefinitions>
@@ -24,18 +24,26 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <StackLayout Padding="10" x:DataType="model:Nut">
+                    <StackLayout Padding="0" x:DataType="model:Nut"
+                                 Grid.Column="0">
 
-                        <Image Source="{Binding Image}"
-                               Grid.Column="1"
-                               Grid.Row="0"/>
-                        
+                        <Image Source="{Binding Image}"/>
+
+                    </StackLayout>
+
+                    <StackLayout Padding="0" x:DataType="model:Nut"
+                                 Grid.Column="1">
+
+
                         <Label Text="{Binding Name}"
-                               Grid.Column="1"
-                               Grid.Row="0"
                                LineBreakMode="NoWrap"
                                FontSize="16"
                                FontAttributes="Bold"
+                               TextColor="White"/>
+
+                        <Label Text="{Binding Description}"
+                               LineBreakMode="NoWrap"
+                               FontSize="12"
                                TextColor="White"/>
 
                     </StackLayout>

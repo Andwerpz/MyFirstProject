@@ -10,13 +10,15 @@ namespace MyFirstProject.Models
     {
         public string Name { get; set; }
         public ImageSource Image { get; set; }
+        public string Description { get; set; }
 
         public Nut()
         {
         }
-        public Nut(string n, string i)
+        public Nut(string n, string d, string i)
         {
             Name = n;
+            Description = d;
             Image = ImageSource.FromUri(new Uri(i));
         }
 
@@ -24,13 +26,13 @@ namespace MyFirstProject.Models
         {
             return new List<Nut>
             {
-                new Nut("Peanut Nut", Images.PeanutNutImageSrc),
-                new Nut("Almond Nut", Images.AlmondNutImageSrc),
-                new Nut("Acorn Nut", Images.AcornNutImageSrc),
-                new Nut("Cashew Nut", Images.CashewNutImageSrc),
-                new Nut("Walnut Nut", Images.WalnutNutImageSrc),
-                new Nut("Hazelnut Nut", Images.HazelnutNutImageSrc),
-                new Nut("Nutty Pecan Nut", Images.PecanNutImageSrc)
+                new Nut("Peanut Nut", "Goog nut", Images.PeanutNutImageSrc),
+                new Nut("Almond Nut", "No goog nut", Images.AlmondNutImageSrc),
+                new Nut("Acorn Nut", "No goog nut", Images.AcornNutImageSrc),
+                new Nut("Cashew Nut", "No goog nut", Images.CashewNutImageSrc),
+                new Nut("Walnut Nut", "Goog nut", Images.WalnutNutImageSrc),
+                new Nut("Hazelnut Nut", "Goog nut", Images.HazelnutNutImageSrc),
+                new Nut("Nutty Pecan Nut", "Goog nut", Images.PecanNutImageSrc)
             };
         }
 
