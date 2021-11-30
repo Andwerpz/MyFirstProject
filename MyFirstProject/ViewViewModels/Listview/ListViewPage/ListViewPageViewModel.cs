@@ -17,7 +17,7 @@ namespace MyFirstProject.ViewViewModels.Listview.ListViewPage
         {
             Title = Titles.ListViewPageTitle;
             Persons = new ObservableCollection<Person>();
-            _person =Person.GetPerson();
+            _person = Person.GetPerson();
             this.LoadPersons();
         }
 

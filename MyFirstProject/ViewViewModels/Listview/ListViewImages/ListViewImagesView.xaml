@@ -1,13 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyFirstProject.ViewViewModels.Listview.ListViewImages"
+             xmlns:model="clr-namespace:MyFirstProject.Models"
              x:Class="MyFirstProject.ViewViewModels.Listview.ListViewImages.ListViewImagesView"
              Title="{Binding Title}">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+
+    <CollectionView x:Name="ItemListView"
+                    ItemsSource="{Binding Nuts}"
+                    SelectionMode="None"
+                    ItemsLayout="VerticalList">
+
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid Padding="20, 5, 20, 10" Margin="12">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Padding="10" x:DataType="model:Nut">
+
+                        <Image Source="{Binding Image}"
+                               Grid.Column="1"
+                               Grid.Row="0"/>
+                        
+                        <Label Text="{Binding Name}"
+                               Grid.Column="1"
+                               Grid.Row="0"
+                               LineBreakMode="NoWrap"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="White"/>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+
+    </CollectionView>
+
 </ContentPage>
