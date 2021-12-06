@@ -20,14 +20,14 @@
                            TextColor="Cyan"
                            HorizontalOptions="CenterAndExpand"/>
 
-        <CollectionView x:Name="ItemListView"
-                        ItemsSource="{Binding NutsList}"
+        <CollectionView x:Name="ItemsListView"
+                        ItemsSource="{Binding NutsList, Mode=TwoWay}"
                         SelectionMode="None"
                         ItemsLayout="VerticalList"
                         HorizontalOptions="CenterAndExpand">
 
             <CollectionView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="model:NutList">
 
                     <StackLayout Padding="0" x:DataType="model:NutList">
 
@@ -45,25 +45,22 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
 
-                            <Label Text="{Binding Nut}"
+                            <Label Text="{Binding Nut, Mode=TwoWay}"
                                    LineBreakMode="NoWrap"
                                    FontSize="12"
                                    FontAttributes="None"
                                    Grid.Column="0"/>
 
                             <Button Text="Update"
+                                    Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference ItemsListView}, Mode=TwoWay}"
                                     FontSize="12"
                                     Grid.Column="1"/>
 
-
-                            <StackLayout x:DataType="local:ListViewButtonsViewModel">
-                                <Button Text="Delete"
+                            <Button Text="Delete"
                                     FontSize="12"
+                                    Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference ItemsListView}, Mode=TwoWay}"
                                     CommandParameter="{Binding .}"
-                                    Clicked="DeleteClicked"
                                     Grid.Column="2"/>
-                            </StackLayout>
-
                         </Grid>
 
                         <Frame BackgroundColor="Black" HeightRequest="1" Padding="0" HorizontalOptions="FillAndExpand"/>

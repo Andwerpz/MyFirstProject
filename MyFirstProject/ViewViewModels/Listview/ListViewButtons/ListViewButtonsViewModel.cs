@@ -36,6 +36,22 @@ namespace MyFirstProject.ViewViewModels.Listview.ListViewButtons
             }
         }
 
+        public Command<NutList> DeleteCommand
+        {
+            get
+            {
+                return new Command<NutList>((NutList nut) => 
+                { 
+                    NutsList.Remove(nut); 
+                });
+            }
+        }
+
+        public Command<NutList> UpdateCommand
+        {
+
+        }
+
         private void LoadNutsList()
         {
             try
