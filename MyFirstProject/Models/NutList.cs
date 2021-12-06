@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Input;
 
 namespace MyFirstProject.Models
 {
-    internal class NutList
+    public class NutList
     {
         public string Nut { get; set; }
-
         public NutList()
         {
         }
@@ -20,14 +20,15 @@ namespace MyFirstProject.Models
         {
             return new List<NutList>
             {
-                new NutList(""),
-                new NutList(""),
-                new NutList(""),
-                new NutList(""),
-                new NutList(""),
-                new NutList(""),
-                new NutList(""),
-                new NutList("")
+                new NutList("nut nut"),
+                new NutList("nut nut v2"),
+                new NutList("nut nut v3"),
+                new NutList("nut nut v6"),
+                new NutList("nut nut v18"),
+                new NutList("nut munt w1v23"),
+                new NutList("nt wed vw nut nut nut v42"),
+                new NutList("nut.")
             };
         }
+    }
 }

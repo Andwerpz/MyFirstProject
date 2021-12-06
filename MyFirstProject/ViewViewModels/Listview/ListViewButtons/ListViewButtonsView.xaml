@@ -1,13 +1,80 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyFirstProject.ViewViewModels.Listview.ListViewButtons"
+             xmlns:model="clr-namespace:MyFirstProject.Models"
              x:Class="MyFirstProject.ViewViewModels.Listview.ListViewButtons.ListViewButtonsView"
              Title="{Binding Title}">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout HorizontalOptions="CenterAndExpand"
+                 VerticalOptions="CenterAndExpand">
+
+        <Label Text="Nut List"
+                           LineBreakMode="NoWrap"
+                           FontSize="36"
+                           FontAttributes="Bold"
+                           TextColor="Cyan"
+                           HorizontalOptions="CenterAndExpand"/>
+
+        <CollectionView x:Name="ItemListView"
+                        ItemsSource="{Binding NutsList}"
+                        SelectionMode="None"
+                        ItemsLayout="VerticalList"
+                        HorizontalOptions="CenterAndExpand">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+
+                    <StackLayout Padding="0" x:DataType="model:NutList">
+
+                        <Frame BackgroundColor="Black" HeightRequest="1" Padding="0" HorizontalOptions="FillAndExpand"/>
+
+                        <Grid Padding="10, 0, 10, 0" Margin="0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="{Binding Nut}"
+                                   LineBreakMode="NoWrap"
+                                   FontSize="12"
+                                   FontAttributes="None"
+                                   Grid.Column="0"/>
+
+                            <Button Text="Update"
+                                    FontSize="12"
+                                    Grid.Column="1"/>
+
+
+                            <StackLayout x:DataType="local:ListViewButtonsViewModel">
+                                <Button Text="Delete"
+                                    FontSize="12"
+                                    CommandParameter="{Binding .}"
+                                    Clicked="DeleteClicked"
+                                    Grid.Column="2"/>
+                            </StackLayout>
+
+                        </Grid>
+
+                        <Frame BackgroundColor="Black" HeightRequest="1" Padding="0" HorizontalOptions="FillAndExpand"/>
+
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+        
+    </StackLayout>
+
+
 </ContentPage>
