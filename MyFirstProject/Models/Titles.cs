@@ -30,6 +30,13 @@ namespace MyFirstProject.Models
         public static string ListViewPageTitle { get; } = "ListView Page";
         public static string ListViewImagesTitle { get; } = "ListView Images";
         public static string ListViewButtonsTitle { get; } = "ListView Buttons";
+        //ListViewButtons Subpage
+        public static string EditTitle { get; } = "Edit Nut";
+
+        public static string AddTitle { get; } = "Add";
+        public static string NotEmpty { get; } = "?????";
+        //ListView Pages Continued
         public static string ListViewIconsTitle { get; } = "ListView Icons";
+
     }
 }
