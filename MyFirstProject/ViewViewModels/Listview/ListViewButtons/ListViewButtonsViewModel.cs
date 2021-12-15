@@ -1,5 +1,6 @@
 ﻿using MyFirstProject.Models;
 using MyFirstProject.ViewViewModel;
+using MyFirstProject.ViewViewModels.Listview.ListViewButtons.AddNut;
 using MyFirstProject.ViewViewModels.Listview.ListViewButtons.EditNut;
 using System;
 using System.Collections.Generic;
@@ -65,6 +66,24 @@ namespace MyFirstProject.ViewViewModels.Listview.ListViewButtons
                         NutsList.Insert(index, data);
 
                         MessagingCenter.Unsubscribe<NutList>(this, "UpdateNutList");
+                    });
+                });
+            }
+        }
+
+        public Command<NutList> AddCommand
+        {
+            get
+            {
+                return new Command<NutList>((NutList nut) =>
+                {
+                    Application.Current.MainPage.Navigation.PushAsync(new AddNutView());
+
+                    MessagingCenter.Subscribe<NutList>(this, "AddNutList", async (data) =>
+                    {
+                        NutsList.Add(data);
+
+                        MessagingCenter.Unsubscribe<NutList>(this, "AddNutList");
                     });
                 });
             }

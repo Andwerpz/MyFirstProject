@@ -6,17 +6,17 @@ using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace MyFirstProject.ViewViewModels.Listview.ListViewButtons.EditNut
+namespace MyFirstProject.ViewViewModels.Listview.ListViewButtons.AddNut
 {
-    public class EditNutViewModel : BaseViewModel
+    public class AddNutViewModel : BaseViewModel
     {
-        public ICommand btnUpdateClicked { get; set; }
+        private ICommand btnAddClicked { get; set; }
         private string _nutText = string.Empty;
 
-        public EditNutViewModel()
+        public AddNutViewModel()
         {
-            Title =  Titles.EditTitle;
-            btnUpdateClicked = new Command(PerformSave);
+            Title = Titles.AddTitle;
+            btnAddClicked = new Command(PerformSave);
         }
 
         public string NutText
@@ -31,7 +31,7 @@ namespace MyFirstProject.ViewViewModels.Listview.ListViewButtons.EditNut
 
         private void PerformSave()
         {
-            if(String.IsNullOrEmpty(_nutText.Trim()))
+            if (String.IsNullOrEmpty(_nutText.Trim()))
             {
                 Application.Current.MainPage.DisplayAlert(Titles.AddTitle, Titles.NotEmpty, "OK");
                 return;
@@ -39,7 +39,7 @@ namespace MyFirstProject.ViewViewModels.Listview.ListViewButtons.EditNut
 
             NutList nuts = new NutList(_nutText);
 
-            MessagingCenter.Send<NutList>(nuts, "UpdateNutList");
+            MessagingCenter.Send<NutList>(nuts, "AddNutList");
             Application.Current.MainPage.Navigation.PopAsync();
         }
     }

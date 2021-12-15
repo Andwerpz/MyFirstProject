@@ -6,9 +6,11 @@
              x:Class="MyFirstProject.ViewViewModels.Listview.ListViewButtons.ListViewButtonsView"
              Title="{Binding Title}">
 
+
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add"
-                     Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference ItemsListView}, Mode=TwoWay}"/>
+                     Command="{Binding Path=BindingContext.AddCommand, Source={x:Reference ItemsListView}, Mode=TwoWay}"
+                     CommandParameter="{Binding .}"/>
     </ContentPage.ToolbarItems>
 
     <StackLayout HorizontalOptions="CenterAndExpand"
@@ -20,6 +22,7 @@
                            FontAttributes="Bold"
                            TextColor="Cyan"
                            HorizontalOptions="CenterAndExpand"/>
+        <Frame BackgroundColor="Black" HeightRequest="2" Padding="0" HorizontalOptions="FillAndExpand"/>
 
         <CollectionView x:Name="ItemsListView"
                         ItemsSource="{Binding NutsList, Mode=TwoWay}"
@@ -27,12 +30,13 @@
                         ItemsLayout="VerticalList"
                         HorizontalOptions="CenterAndExpand">
 
+
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:NutList">
 
                     <StackLayout Padding="0" x:DataType="model:NutList">
 
-                        <Frame BackgroundColor="Black" HeightRequest="1" Padding="0" HorizontalOptions="FillAndExpand"/>
+
 
                         <Grid Padding="10, 0, 10, 0" Margin="0">
 
@@ -50,7 +54,8 @@
                                    LineBreakMode="NoWrap"
                                    FontSize="12"
                                    FontAttributes="None"
-                                   Grid.Column="0"/>
+                                   Grid.Column="0"
+                                   VerticalOptions="Center"/>
 
                             <Button Text="Update"
                                     Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference ItemsListView}, Mode=TwoWay}"
@@ -66,14 +71,14 @@
 
                         </Grid>
 
-                        <Frame BackgroundColor="Black" HeightRequest="1" Padding="0" HorizontalOptions="FillAndExpand"/>
+                        <Frame BackgroundColor="Black" HeightRequest="2" Padding="0" HorizontalOptions="FillAndExpand"/>
 
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
 
         </CollectionView>
-        
+
     </StackLayout>
 
 
