@@ -2,11 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstProject.ViewViewModels.Listview.ListViewButtons.EditNut.EditNutView">
-    
+
     <ContentPage.Content>
-        
+
         <StackLayout Padding="5">
-            
+
             <Label Text="Nut"
                    FontAttributes="Bold"/>
 
@@ -21,7 +21,7 @@
                     HorizontalOptions="FillAndExpand"
                     x:Name="saveBtn"/>
         </StackLayout>
-        
+
     </ContentPage.Content>
-    
+
 </ContentPage>

@@ -15,7 +15,7 @@
                    Text="{Binding NutText}"
                    x:Name="Title"/>
 
-            <Button Text="Update"
+            <Button Text="Save"
                     Command="{Binding btnAddClicked}"
                     HorizontalOptions="FillAndExpand"
                     x:Name="saveBtn"/>

@@ -6,11 +6,10 @@
              x:Class="MyFirstProject.ViewViewModels.Listview.ListViewButtons.ListViewButtonsView"
              Title="{Binding Title}">
 
-
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add"
-                     Command="{Binding Path=BindingContext.AddCommand, Source={x:Reference ItemsListView}, Mode=TwoWay}"
-                     CommandParameter="{Binding .}"/>
+                     x:Name="Addbtn"
+                     Command="{Binding AddCommand}"/>
     </ContentPage.ToolbarItems>
 
     <StackLayout HorizontalOptions="CenterAndExpand"

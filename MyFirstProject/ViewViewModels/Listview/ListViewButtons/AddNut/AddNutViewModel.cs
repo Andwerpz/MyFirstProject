@@ -10,7 +10,7 @@ namespace MyFirstProject.ViewViewModels.Listview.ListViewButtons.AddNut
 {
     public class AddNutViewModel : BaseViewModel
     {
-        private ICommand btnAddClicked { get; set; }
+        public ICommand btnAddClicked { get; set; }
         private string _nutText = string.Empty;
 
         public AddNutViewModel()

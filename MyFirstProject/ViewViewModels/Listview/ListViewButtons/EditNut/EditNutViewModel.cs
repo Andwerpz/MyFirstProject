@@ -28,7 +28,7 @@ namespace MyFirstProject.ViewViewModels.Listview.ListViewButtons.EditNut
                     SetProperty(ref _nutText, value);
             }
         }
-
+        
         private void PerformSave()
         {
             if(String.IsNullOrEmpty(_nutText.Trim()))
