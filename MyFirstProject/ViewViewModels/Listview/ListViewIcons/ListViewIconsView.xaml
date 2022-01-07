@@ -15,12 +15,13 @@
     <StackLayout HorizontalOptions="CenterAndExpand"
                  VerticalOptions="CenterAndExpand">
 
-        <Label Text="Nut List"
-                           LineBreakMode="NoWrap"
-                           FontSize="36"
-                           FontAttributes="Bold"
-                           TextColor="Cyan"
-                           HorizontalOptions="CenterAndExpand"/>
+        <Label  Text="Nut List"
+                LineBreakMode="NoWrap"
+                FontSize="36"
+                FontAttributes="Bold"
+                TextColor="Cyan"
+                HorizontalOptions="CenterAndExpand"/>
+
         <Frame BackgroundColor="Black" HeightRequest="2" Padding="0" HorizontalOptions="FillAndExpand"/>
 
         <CollectionView x:Name="ItemsListView"
@@ -45,8 +46,8 @@
 
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
 
                             <Label Text="{Binding Nut, Mode=TwoWay}"
@@ -56,17 +57,24 @@
                                    Grid.Column="0"
                                    VerticalOptions="Center"/>
 
-                            <Button Text="Update"
-                                    Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference ItemsListView}, Mode=TwoWay}"
-                                    CommandParameter="{Binding .}"
-                                    FontSize="12"
-                                    Grid.Column="1"/>
+                            <ImageButton    Source="{Binding UpdateImageSrc}"
+                                            BackgroundColor="Transparent"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference ItemsListView}, Mode=TwoWay}"
+                                            CommandParameter="{Binding .}"
+                                            Grid.Column="1">
+                            </ImageButton>
 
-                            <Button Text="Delete"
-                                    FontSize="12"
-                                    Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference ItemsListView}, Mode=TwoWay}"
-                                    CommandParameter="{Binding .}"
-                                    Grid.Column="2"/>
+                            <ImageButton    Source="{Binding DeleteImageSrc}"
+                                            BackgroundColor="Transparent"
+                                            WidthRequest="30"
+                                            HeightRequest="30"
+                                            Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference ItemsListView}, Mode=TwoWay}"
+                                            CommandParameter="{Binding .}"
+                                            Grid.Column="2">
+								
+                            </ImageButton>
 
                         </Grid>
 

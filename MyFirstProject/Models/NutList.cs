@@ -2,14 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace MyFirstProject.Models
 {
     public class NutList
     {
+        public ImageSource DeleteImageSrc { get; } = Images.DeleteImageSrc;
+
+        public ImageSource UpdateImageSrc { get; } = Images.UpdateImageSrc;
+
         public string Nut { get; set; }
         public NutList()
         {
+
         }
         public NutList(string n)
         {

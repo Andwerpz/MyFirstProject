@@ -20,5 +20,9 @@ namespace MyFirstProject.Models
         public static string PeanutNutImageSrc { get; } = "https://gobadornot.com/wp-content/uploads/2020/11/Do-Peanuts-Go-Bad-1200x900.jpg";
         public static string AlmondNutImageSrc { get; } = "https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/04/28/21/almonds-1-sustainability-indyeats.jpg?width=1200&auto=webp&quality=75";
 
+        //ListViewIcons
+        public static ImageSource DeleteImageSrc { get; } = ImageSource.FromResource("MyFirstProject.Images.iconsdelete.png");
+        public static ImageSource UpdateImageSrc { get; } = ImageSource.FromResource("MyFirstProject.Images.iconsedit.png");
+
     }
 }

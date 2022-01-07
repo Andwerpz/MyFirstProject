@@ -1,7 +1,7 @@
 ﻿using MyFirstProject.Models;
 using MyFirstProject.ViewViewModel;
-using MyFirstProject.ViewViewModels.Listview.ListViewButtons.AddNut;
-using MyFirstProject.ViewViewModels.Listview.ListViewButtons.EditNut;
+using MyFirstProject.ViewViewModels.Listview.ListViewIcons.AddNut;
+using MyFirstProject.ViewViewModels.Listview.ListViewIcons.EditNut;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -15,9 +15,19 @@ namespace MyFirstProject.ViewViewModels.Listview.ListViewIcons
     {
         private List<NutList> _nutList;
         private ObservableCollection<NutList> _nutLists;
+
+        public ImageSource DeleteImageSrc { get; set; }
+
+        public ImageSource UpdateImageSrc { get; set; }
+
         public ListViewIconsViewModel()
         {
             Title = Titles.ListViewIconsTitle;
+
+            DeleteImageSrc = Images.DeleteImageSrc;
+
+            UpdateImageSrc = Images.UpdateImageSrc;
+
             NutsList = new ObservableCollection<NutList>();
             _nutList = NutList.GetNutList();
             this.LoadNutsList();

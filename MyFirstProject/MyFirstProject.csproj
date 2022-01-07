@@ -11,10 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\iconsdelete.png" />
+    <None Remove="Images\iconsedit.png" />
     <None Remove="Images\nut.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Images\iconsdelete.png" />
+    <EmbeddedResource Include="Images\iconsedit.png" />
     <EmbeddedResource Include="Images\nut.jpg" />
   </ItemGroup>
 
@@ -70,6 +74,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModels\Listview\ListViewButtons\ListViewButtonsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Listview\ListViewIcons\AddNut\AddNutView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Listview\ListViewIcons\EditNut\EditNutView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModels\Listview\ListViewIcons\ListViewIconsView.xaml">

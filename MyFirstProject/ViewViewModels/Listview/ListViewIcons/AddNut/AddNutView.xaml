@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModels.Listview.ListViewIcons.AddNut.AddNutView">
+    <ContentPage.Content>
+        
+        <StackLayout Padding="5">
+
+            <Label Text="Nut"
+                   FontAttributes="Bold"/>
+
+            <Entry Placeholder="Enter Nut"
+                   FontSize="Small"
+                   HorizontalOptions="FillAndExpand"
+                   Text="{Binding NutText}"
+                   x:Name="Title"/>
+
+            <Button Text="Save"
+                    Command="{Binding btnAddClicked}"
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="saveBtn"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
