@@ -16,6 +16,20 @@ namespace MyFirstProject.ViewViewModels.Controls.Slider
         {
             InitializeComponent();
             BindingContext = new SliderViewModel();
+            this.SetPadding();
+        }
+
+        private void SetPadding()
+        {
+            switch(Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                    Padding = 20;
+                    break;
+                case Device.Android:
+                    Padding = 10;
+                    break;
+            }
         }
     }
 }
