@@ -34,7 +34,7 @@ namespace MyFirstProject.Models
         public static string EditTitle { get; } = "Edit Nut";
 
         public static string AddTitle { get; } = "Add";
-        public static string NotEmpty { get; } = "?????";
+        public static string NotEmpty { get; } = "Message needs to not be empty.";
         //ListView Pages Continued
         public static string ListViewIconsTitle { get; } = "ListView Icons";
 
