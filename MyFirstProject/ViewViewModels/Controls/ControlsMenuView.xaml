@@ -4,10 +4,45 @@
              x:Class="MyFirstProject.ViewViewModels.Controls.ControlsMenuView"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Controls!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        
+        <StackLayout Padding="10, 20, 10, 0">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Text="Slider"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Command="{Binding OnSliderClicked}"/>
+
+                <Button Text="Stepper"
+                        Grid.Row="0"
+                        Grid.Column="1"/>
+
+                <Button Text="Switch"
+                        Grid.Row="1"
+                        Grid.Column="0"/>
+
+                <Button Text="Entry"
+                        Grid.Row="1"
+                        Grid.Column="1"/>
+
+            </Grid>
+
+            <Button Text="Picker"/>
+
+            <Button Text="Date And Time Picker"/>
+
         </StackLayout>
+        
     </ContentPage.Content>
+    
 </ContentPage>

@@ -38,5 +38,9 @@ namespace MyFirstProject.Models
         //ListView Pages Continued
         public static string ListViewIconsTitle { get; } = "ListView Icons";
 
+        //Controls Page Titles
+
+        public static string SliderTitle { get; } = "Slider";
+
     }
 }
