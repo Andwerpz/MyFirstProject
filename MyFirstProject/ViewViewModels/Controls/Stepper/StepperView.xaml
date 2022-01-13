@@ -18,6 +18,7 @@
             <Stepper    x:Name="_stepper"
                         Increment="10"
                         Maximum="360"
+                        Minimum="-360"
                         HorizontalOptions="Center"
                         ValueChanged="OnStepperValueChanged"/>
 

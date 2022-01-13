@@ -17,5 +17,22 @@ namespace MyFirstProject.ViewViewModels.Controls.Switch
             InitializeComponent();
             BindingContext = new SwitchViewModel();
         }
+
+        private void SwitchToggled(object sender, ToggledEventArgs e)
+        {
+            if (e.Value == false)
+            {
+                _testLabel.TextColor = Color.Red;
+                _testLabel.Text = "Off";
+                _testLabel.HorizontalOptions = LayoutOptions.CenterAndExpand;
+            }
+            else
+            {
+                _testLabel.TextColor = Color.Blue;
+                _testLabel.Text = "On";
+                _testLabel.HorizontalOptions = LayoutOptions.CenterAndExpand;
+            }
+                
+        }
     }
 }

@@ -22,6 +22,11 @@ namespace MyFirstProject.ViewViewModels.Controls.Stepper
         {
             double value = e.NewValue;
             _rotatingLabel.Rotation = value;
+            if (value == 360)
+                value = 0;
+            else if (value == -360)
+                value = 0;
+            _stepper.Value = value;
             _displayLabel.Text = string.Format("The Stepper value is {0}", value);
         }
     }
