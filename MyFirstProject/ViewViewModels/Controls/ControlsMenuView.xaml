@@ -25,21 +25,26 @@
 
                 <Button Text="Stepper"
                         Grid.Row="0"
-                        Grid.Column="1"/>
+                        Grid.Column="1"
+                        Command="{Binding OnStepperClicked}"/>
 
                 <Button Text="Switch"
                         Grid.Row="1"
-                        Grid.Column="0"/>
+                        Grid.Column="0"
+                        Command="{Binding OnSwitchClicked}"/>
 
                 <Button Text="Entry"
                         Grid.Row="1"
-                        Grid.Column="1"/>
+                        Grid.Column="1"
+                        Command="{Binding OnEntryClicked}"/>
 
             </Grid>
 
-            <Button Text="Picker"/>
+            <Button Text="Picker"
+                    Command="{Binding OnPickerClicked}"/>
 
-            <Button Text="Date And Time Picker"/>
+            <Button Text="Date And Time Picker"
+                    Command="{Binding OnDateTimePickerClicked}"/>
 
         </StackLayout>
         

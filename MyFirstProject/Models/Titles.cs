@@ -6,6 +6,7 @@ namespace MyFirstProject.Models
 {
     public static class Titles
     {
+        public static string Title { get; } = "Placeholder";
         //MAIN
         public static string MainPageTitle { get; } = "Main Page";
 
@@ -41,6 +42,13 @@ namespace MyFirstProject.Models
         //Controls Page Titles
 
         public static string SliderTitle { get; } = "Slider";
+        public static string StepperTitle { get; } = "Stepper";
+        public static string SwitchTitle { get; } = "Switch";
+        public static string EntryTitle { get; } = "Entry";
+        public static string PickerTitle { get; } = "Picker";
+        public static string DateTimePickerTitle { get; } = "Date and Time Picker";
+
+
 
     }
 }

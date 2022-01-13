@@ -31,7 +31,22 @@
     <EmbeddedResource Update="ViewViewModels\Controls\ControlsMenuView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Controls\DateTimePicker\DateTimePickerView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Controls\Entry\EntryView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Controls\Picker\PickerView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModels\Controls\Slider\SliderView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Controls\Stepper\StepperView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Controls\Switch\SwitchView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModels\Image\ActivityIndicator\ActivityIndicatorView.xaml">
@@ -97,13 +112,5 @@
     <EmbeddedResource Update="ViewViewModels\Listview\ListViewPage\ListViewPageView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ViewViewModels\Controls\Switch\" />
-    <Folder Include="ViewViewModels\Controls\Entry\" />
-    <Folder Include="ViewViewModels\Controls\Picker\" />
-    <Folder Include="ViewViewModels\Controls\DateAndTimePicker\" />
-    <Folder Include="ViewViewModels\Controls\Stepper\" />
   </ItemGroup>
 </Project>
