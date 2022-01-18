@@ -8,10 +8,15 @@
         
         <StackLayout>
             
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            
+            <Button Text="Entry Page"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand" 
+                    Command="{Binding OnEntryPageClicked}"/>
+
+            <Button Text="Entry 2"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+
         </StackLayout>
         
     </ContentPage.Content>

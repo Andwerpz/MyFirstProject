@@ -15,15 +15,14 @@
                          Opacity="{Binding Value}" />
 
                 <StackLayout HorizontalOptions="Center" >
-                    <Label Text="{Binding Value, StringFormat='Value of the slider is {0:F2}%'}"
+                    <Label Text="{Binding Value, StringFormat='Value of the slider is {0:F2}'}"
                            FontAttributes="Bold"
                            FontSize="Large"
                            Opacity="{Binding Value}" />
                 </StackLayout>
 
                 <Slider x:Name="slider" 
-                        Value="50"
-                        Maximum="100"/>
+                        Value=".5"/>
                 
             </StackLayout>
 
