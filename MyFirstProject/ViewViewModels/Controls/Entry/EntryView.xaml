@@ -13,9 +13,10 @@
                     HorizontalOptions="CenterAndExpand" 
                     Command="{Binding OnEntryPageClicked}"/>
 
-            <Button Text="Entry 2"
+            <Button Text="Entry Practice"
                    VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
+                   HorizontalOptions="CenterAndExpand"
+                    Command="{Binding OnEntryPracticeClicked}"/>
 
         </StackLayout>
         

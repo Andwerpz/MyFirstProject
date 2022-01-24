@@ -46,6 +46,8 @@ namespace MyFirstProject.Models
         public static string SwitchTitle { get; } = "Switch";
         public static string EntryTitle { get; } = "Entry";
             public static string EntryPageTitle { get; } = "Entry Page";
+            public static string EntryPracticeTitle { get; } = "Entry Practice";
+                public static string EntryResultTitle { get; } = "Entry Result";
         public static string PickerTitle { get; } = "Picker";
         public static string DateTimePickerTitle { get; } = "Date and Time Picker";
 

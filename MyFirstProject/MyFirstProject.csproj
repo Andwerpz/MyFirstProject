@@ -37,6 +37,12 @@
     <EmbeddedResource Update="ViewViewModels\Controls\Entry\EntryPage\EntryPageView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Controls\Entry\EntryPractice\EntryPracticeView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Controls\Entry\EntryPractice\EntryResult\EntryResultView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModels\Controls\Entry\EntryView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
