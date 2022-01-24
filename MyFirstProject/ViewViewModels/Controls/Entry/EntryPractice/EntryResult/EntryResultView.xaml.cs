@@ -12,11 +12,10 @@ namespace MyFirstProject.ViewViewModels.Controls.Entry.EntryPractice.EntryResult
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EntryResultView : ContentPage
     {
-        public EntryResultView(String text)
+        public EntryResultView(String _entryText)
         {
             InitializeComponent();
-            BindingContext = new EntryResultViewModel();
-            Result.Text = text;
+            BindingContext = new EntryResultViewModel(_entryText);
         }
     }
 }

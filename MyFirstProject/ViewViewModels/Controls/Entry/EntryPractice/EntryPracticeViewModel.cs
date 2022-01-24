@@ -41,13 +41,11 @@ namespace MyFirstProject.ViewViewModels.Controls.Entry.EntryPractice
             if (string.IsNullOrEmpty(_entryText.Trim()))
             {
                 await Application.Current.MainPage.DisplayAlert(Titles.EntryPageTitle, "Entry Cannot Be Empty", "OK");
-                Console.WriteLine("1");
                 return;
             }
             else
             {
                 await Application.Current.MainPage.Navigation.PushAsync(new EntryResultView(_entryText));
-                Console.WriteLine("2");
                 return;
             }
         }

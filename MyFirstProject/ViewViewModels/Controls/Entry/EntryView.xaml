@@ -6,16 +6,14 @@
     
     <ContentPage.Content>
         
-        <StackLayout>
-            
+        <StackLayout VerticalOptions="CenterAndExpand">
+
             <Button Text="Entry Page"
-                    VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand" 
                     Command="{Binding OnEntryPageClicked}"/>
 
             <Button Text="Entry Practice"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
                     Command="{Binding OnEntryPracticeClicked}"/>
 
         </StackLayout>
