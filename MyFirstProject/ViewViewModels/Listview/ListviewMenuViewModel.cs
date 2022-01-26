@@ -1,14 +1,11 @@
 ﻿using MyFirstProject.Models;
 using MyFirstProject.ViewViewModel;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Input;
-using Xamarin.Forms;
-using MyFirstProject.ViewViewModels.Listview.ListViewPage;
-using MyFirstProject.ViewViewModels.Listview.ListViewImages;
 using MyFirstProject.ViewViewModels.Listview.ListViewButtons;
 using MyFirstProject.ViewViewModels.Listview.ListViewIcons;
+using MyFirstProject.ViewViewModels.Listview.ListViewImages;
+using MyFirstProject.ViewViewModels.Listview.ListViewPage;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace MyFirstProject.ViewViewModels.Listview
 {

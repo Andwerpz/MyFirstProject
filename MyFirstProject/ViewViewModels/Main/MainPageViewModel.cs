@@ -4,10 +4,6 @@ using MyFirstProject.ViewViewModels.Controls;
 using MyFirstProject.ViewViewModels.Image;
 using MyFirstProject.ViewViewModels.Layouts;
 using MyFirstProject.ViewViewModels.Listview;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 

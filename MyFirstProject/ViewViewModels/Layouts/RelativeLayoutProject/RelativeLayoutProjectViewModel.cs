@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using MyFirstProject.Models;
+﻿using MyFirstProject.Models;
 using MyFirstProject.ViewViewModel;
 
 namespace MyFirstProject.ViewViewModels.Layouts.RelativeLayoutProject

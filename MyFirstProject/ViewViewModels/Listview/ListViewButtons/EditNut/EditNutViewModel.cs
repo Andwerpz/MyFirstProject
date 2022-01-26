@@ -1,8 +1,6 @@
 ﻿using MyFirstProject.Models;
 using MyFirstProject.ViewViewModel;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -15,7 +13,7 @@ namespace MyFirstProject.ViewViewModels.Listview.ListViewButtons.EditNut
 
         public EditNutViewModel()
         {
-            Title =  Titles.EditTitle;
+            Title = Titles.EditTitle;
             btnUpdateClicked = new Command(PerformSave);
         }
 
@@ -28,10 +26,10 @@ namespace MyFirstProject.ViewViewModels.Listview.ListViewButtons.EditNut
                     SetProperty(ref _nutText, value);
             }
         }
-        
+
         private void PerformSave()
         {
-            if(String.IsNullOrEmpty(_nutText.Trim()))
+            if (String.IsNullOrEmpty(_nutText.Trim()))
             {
                 Application.Current.MainPage.DisplayAlert(Titles.AddTitle, Titles.NotEmpty, "OK");
                 return;

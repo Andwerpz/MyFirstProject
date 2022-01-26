@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModels.Controls.Picker.PickerXaml.PickerXamlView"
+             Title="{Binding Title}">
+    <StackLayout Padding="0, 20">
+        
+        <Label Text="Picker XAML"
+               FontSize="Large"
+               FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand"/>
+
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="CenterAndExpand">
+
+            <Picker x:Name="pickerXAML"
+                    Title="Select a Nut"
+                    TitleColor="BlanchedAlmond"
+                    SelectedItem="{Binding SelectedItem}"
+                    VerticalOptions="FillAndExpand"
+                    WidthRequest="300">
+
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Nut</x:String>
+                        <x:String>Nut V2</x:String>
+                        <x:String>Nut V3</x:String>
+                        <x:String>Nut V4</x:String>
+                        <x:String>Nut V5</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+        </StackLayout>
+        
+    </StackLayout>
+</ContentPage>

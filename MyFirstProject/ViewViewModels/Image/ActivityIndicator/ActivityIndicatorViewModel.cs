@@ -1,8 +1,6 @@
 ﻿using MyFirstProject.Models;
 using MyFirstProject.ViewViewModel;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using Xamarin.Forms;
 
 namespace MyFirstProject.ViewViewModels.Image.ActivityIndicator

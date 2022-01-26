@@ -6,9 +6,6 @@ using MyFirstProject.ViewViewModels.Controls.Picker;
 using MyFirstProject.ViewViewModels.Controls.Slider;
 using MyFirstProject.ViewViewModels.Controls.Stepper;
 using MyFirstProject.ViewViewModels.Controls.Switch;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 

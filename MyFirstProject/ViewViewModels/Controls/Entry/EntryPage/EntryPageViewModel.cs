@@ -1,8 +1,5 @@
 ﻿using MyFirstProject.Models;
 using MyFirstProject.ViewViewModel;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -11,7 +8,7 @@ namespace MyFirstProject.ViewViewModels.Controls.Entry.EntryPage
     public class EntryPageViewModel : BaseViewModel
     {
         public ICommand OnEntryPageClicked { get; }
-        private string _entryText = string.Empty; 
+        private string _entryText = string.Empty;
         public EntryPageViewModel()
         {
             Title = Titles.EntryPageTitle;
@@ -22,10 +19,10 @@ namespace MyFirstProject.ViewViewModels.Controls.Entry.EntryPage
         {
             get { return _entryText; }
 
-            set 
+            set
             {
-            
-                if(_entryText != value)
+
+                if (_entryText != value)
                 {
                     SetProperty(ref _entryText, value);
                 }
@@ -35,7 +32,7 @@ namespace MyFirstProject.ViewViewModels.Controls.Entry.EntryPage
 
         private async void OnEntryPageClickedAsync(object obj)
         {
-            if(string.IsNullOrEmpty(_entryText.Trim()))
+            if (string.IsNullOrEmpty(_entryText.Trim()))
             {
                 await Application.Current.MainPage.DisplayAlert(Titles.EntryPageTitle, "Entry Cannot Be Empty", "OK");
                 return;

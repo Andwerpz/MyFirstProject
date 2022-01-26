@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MyFirstProject.ViewViewModels.Layouts.RelativeLayout;
+﻿using MyFirstProject.ViewViewModels.Layouts.RelativeLayout;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

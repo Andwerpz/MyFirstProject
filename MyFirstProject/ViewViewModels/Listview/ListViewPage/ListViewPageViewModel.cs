@@ -4,13 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Text;
 
 namespace MyFirstProject.ViewViewModels.Listview.ListViewPage
 {
     class ListViewPageViewModel : BaseViewModel
     {
-        public ObservableCollection<Person> Persons {  get; }
+        public ObservableCollection<Person> Persons { get; }
 
         private List<Person> _person;
         public ListViewPageViewModel()
@@ -36,7 +35,7 @@ namespace MyFirstProject.ViewViewModels.Listview.ListViewPage
                 Debug.WriteLine(ex);
             }
         }
-        
+
     }
 }
 

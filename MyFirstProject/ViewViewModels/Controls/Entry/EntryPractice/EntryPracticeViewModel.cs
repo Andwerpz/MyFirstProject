@@ -2,8 +2,6 @@
 using MyFirstProject.ViewViewModel;
 using MyFirstProject.ViewViewModels.Controls.Entry.EntryPractice.EntryResult;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 

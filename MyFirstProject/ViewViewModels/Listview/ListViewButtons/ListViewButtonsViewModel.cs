@@ -6,8 +6,6 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Text;
-using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace MyFirstProject.ViewViewModels.Listview.ListViewButtons
@@ -42,9 +40,9 @@ namespace MyFirstProject.ViewViewModels.Listview.ListViewButtons
         {
             get
             {
-                return new Command<NutList>((NutList nut) => 
-                { 
-                    NutsList.Remove(nut); 
+                return new Command<NutList>((NutList nut) =>
+                {
+                    NutsList.Remove(nut);
                 });
             }
         }

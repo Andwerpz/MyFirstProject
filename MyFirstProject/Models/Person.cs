@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace MyFirstProject.Models
 {
@@ -8,7 +6,8 @@ namespace MyFirstProject.Models
     {
         public string Name { get; set; }
 
-        public Person() { 
+        public Person()
+        {
         }
         public Person(string n)
         {

@@ -1,12 +1,11 @@
 ﻿using MyFirstProject.Models;
 using MyFirstProject.ViewViewModel;
+using MyFirstProject.ViewViewModels.Image.ActivityIndicator;
 using MyFirstProject.ViewViewModels.Image.EmbeddedImage;
 using MyFirstProject.ViewViewModels.Image.EmbeddedImageProject;
 using MyFirstProject.ViewViewModels.Image.UriImage;
 using MyFirstProject.ViewViewModels.Image.UriImageCache;
 using MyFirstProject.ViewViewModels.Image.UriImageProject;
-using MyFirstProject.ViewViewModels.Image.ActivityIndicator;
-using System;
 using System.Windows.Input;
 using Xamarin.Forms;
 

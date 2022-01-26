@@ -6,11 +6,11 @@
     
     <ContentPage.Content>
         
-        <StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
             
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Text="PickerPage"
+                    HorizontalOptions="CenterAndExpand"
+                    Command="{Binding OnPickerXamlClicked}"/>
             
         </StackLayout>
         

@@ -1,7 +1,4 @@
-﻿using MyFirstProject.ViewViewModels.Controls;
-using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace MyFirstProject
 {

@@ -4,9 +4,6 @@ using MyFirstProject.Models;
 using MyFirstProject.ViewViewModel;
 using MyFirstProject.ViewViewModels.Controls.Entry.EntryPage;
 using MyFirstProject.ViewViewModels.Controls.Entry.EntryPractice;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 

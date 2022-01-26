@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,7 +16,7 @@ namespace MyFirstProject.ViewViewModels.Controls.Slider
 
         private void SetPadding()
         {
-            switch(Device.RuntimePlatform)
+            switch (Device.RuntimePlatform)
             {
                 case Device.iOS:
                     Padding = 20;

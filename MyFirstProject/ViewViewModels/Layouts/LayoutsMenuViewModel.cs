@@ -4,10 +4,6 @@ using MyFirstProject.ViewViewModels.Layouts.AbsoluteLayout;
 using MyFirstProject.ViewViewModels.Layouts.AbsoluteLayoutProject;
 using MyFirstProject.ViewViewModels.Layouts.Relative;
 using MyFirstProject.ViewViewModels.Layouts.RelativeLayoutProject;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
