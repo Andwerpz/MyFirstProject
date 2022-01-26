@@ -11,7 +11,11 @@
             <Button Text="PickerPage"
                     HorizontalOptions="CenterAndExpand"
                     Command="{Binding OnPickerXamlClicked}"/>
-            
+
+            <Button Text="PickerVM"
+                    HorizontalOptions="CenterAndExpand"
+                    Command="{Binding OnPickerVMCLicked}"/>
+
         </StackLayout>
         
     </ContentPage.Content>

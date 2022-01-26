@@ -67,6 +67,7 @@
 
         public static string PickerTitle { get; } = "Picker";
         public static string PickerXamlTitle { get; } = "Picker Page";
+        public static string PickerVMTitle { get; } = "Picker View Model";
 
         public static string DateTimePickerTitle { get; } = "Date and Time Picker";
         
