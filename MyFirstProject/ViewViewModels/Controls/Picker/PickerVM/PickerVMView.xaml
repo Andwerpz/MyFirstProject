@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstProject.ViewViewModels.Controls.Picker.PickerVM.PickerVMView"
+             x:Class="MyFirstProject.ViewViewModels.Controls.Picker.PickerVM.PickerResult"
              Title="{Binding Title}">
     <StackLayout Padding="0, 20">
 
@@ -13,7 +13,7 @@
         <StackLayout VerticalOptions="CenterAndExpand"
                      HorizontalOptions="CenterAndExpand">
 
-            <Picker x:Name="pickerXAML"
+            <Picker x:Name="pickerVM"
                     Title="Select a Nut"
                     TitleColor="BlanchedAlmond"
                     SelectedItem="{Binding SelectedItem}"
@@ -21,6 +21,10 @@
                     WidthRequest="300"
                     ItemsSource="{Binding ItemsSource}">
             </Picker>
+
+            <Button Text="Submit"
+                    HorizontalOptions="CenterAndExpand"
+                    Command="{Binding OnSubmitClicked}"/>
 
         </StackLayout>
 

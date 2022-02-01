@@ -23,7 +23,7 @@ namespace MyFirstProject.ViewViewModels.Controls.Picker
 
         private async void OnPickerVMClickedAsync(object obj)
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new PickerVMView());
+            await Application.Current.MainPage.Navigation.PushAsync(new PickerVM.PickerResult());
         }
 
         private async void OnPickerXamlClickedAsync(object obj)

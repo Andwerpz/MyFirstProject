@@ -8,7 +8,7 @@
         <Label Text="Picker XAML"
                FontSize="Large"
                FontAttributes="Bold"
-                HorizontalOptions="CenterAndExpand"/>
+               HorizontalOptions="CenterAndExpand"/>
 
         <StackLayout VerticalOptions="CenterAndExpand"
                      HorizontalOptions="CenterAndExpand">
@@ -22,15 +22,20 @@
 
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
-                        <x:String>Nut</x:String>
-                        <x:String>Nut V2</x:String>
-                        <x:String>Nut V3</x:String>
-                        <x:String>Nut V4</x:String>
-                        <x:String>Nut V5</x:String>
+                        <x:String>Peanut Nut</x:String>
+                        <x:String>Almond Nut</x:String>
+                        <x:String>Acorn Nut</x:String>
+                        <x:String>Cashew Nut</x:String>
+                        <x:String>Walnut Nut</x:String>
+                        <x:String>Hazelnut Nut</x:String>
+                        <x:String>Nutty Pecan Nut</x:String>
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
-            
+
+            <Button Text="Submit"
+                    HorizontalOptions="CenterAndExpand"
+                    Command="{Binding OnSubmitClicked}"/>
         </StackLayout>
         
     </StackLayout>

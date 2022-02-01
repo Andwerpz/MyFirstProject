@@ -9,9 +9,9 @@ using Xamarin.Forms.Xaml;
 
 namespace MyFirstProject.ViewViewModels.Controls.Picker.PickerVM
 {
-    public partial class PickerVMView : ContentPage
+    public partial class PickerResult : ContentPage
     {
-        public PickerVMView()
+        public PickerResult()
         {
             InitializeComponent();
             BindingContext = new PickerVMViewModel();

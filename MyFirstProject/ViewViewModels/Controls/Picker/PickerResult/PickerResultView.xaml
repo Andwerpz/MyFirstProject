@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModels.Controls.Picker.PickerResult.PickerResultView"
+             Title="{Binding Title}">
+    <StackLayout HorizontalOptions="CenterAndExpand">
+
+        <Label Text="Result From"
+               FontSize="Medium"
+               FontAttributes="Bold"
+               HorizontalOptions="CenterAndExpand"/>
+
+        <Label Text="{Binding SourcePage}"
+               FontSize="Medium"
+               FontAttributes="Bold"
+               HorizontalOptions="CenterAndExpand"/>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+
+            <AbsoluteLayout VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand">
+                
+                <ActivityIndicator  HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    IsRunning="{Binding Source={x:Reference Image}, Path = IsLoading}"/>
+
+                <Image x:Name="Image"
+                       Source="{Binding ImageSource}"/>
+                
+            </AbsoluteLayout>
+            
+
+            <Label Text="{Binding Description}"
+                   HorizontalOptions="CenterAndExpand"/>
+
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

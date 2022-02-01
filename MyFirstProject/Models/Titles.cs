@@ -65,9 +65,10 @@
         public static string EntryPracticeTitle { get; } = "Entry Practice";
         public static string EntryResultTitle { get; } = "Entry Result";
 
-        public static string PickerTitle { get; } = "Picker";
+        public static string PickerTitle { get; } = "Picker Menu";
         public static string PickerXamlTitle { get; } = "Picker Page";
         public static string PickerVMTitle { get; } = "Picker View Model";
+        public static string PickerResultTitle { get; } = "Result";
 
         public static string DateTimePickerTitle { get; } = "Date and Time Picker";
         

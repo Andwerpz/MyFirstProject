@@ -7,8 +7,8 @@ namespace MyFirstProject.Models
     public class Nut
     {
         public string Name { get; set; }
-        public ImageSource Image { get; set; }
         public string Description { get; set; }
+        public ImageSource Image { get; set; }
 
         public Nut()
         {
