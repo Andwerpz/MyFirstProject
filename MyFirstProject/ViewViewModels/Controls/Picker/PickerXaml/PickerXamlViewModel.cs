@@ -3,6 +3,7 @@ using MyFirstProject.ViewViewModel;
 using MyFirstProject.ViewViewModels.Controls.Picker.PickerResult;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -42,10 +43,11 @@ namespace MyFirstProject.ViewViewModels.Controls.Picker.PickerXaml
                 await Application.Current.MainPage.DisplayAlert(Titles.PickerVMTitle, "Select an Option First", "OK");
                 return;
             }
-            else
-            {
-                await Application.Current.MainPage.Navigation.PushAsync(new PickerResultView("Picker XAML", _name));
-            }
+            List<People> people = People.GetList();
+
+            var result = people.FirstOrDefault(x => x.Name.Equals(SelectedItem));
+
+            await Application.Current.MainPage.Navigation.PushAsync(new PickerResultView(result.Name, result.Image, result.Description, "Picker XAML"));
         }
     }
 }

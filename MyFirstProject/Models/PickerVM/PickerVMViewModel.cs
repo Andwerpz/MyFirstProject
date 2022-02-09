@@ -12,8 +12,11 @@ namespace MyFirstProject.ViewViewModels.Controls.Picker.PickerVM
 {
     public class PickerVMViewModel : BaseViewModel
     {
-        List<Nut> NutCollection = Nut.GetNut();
+        List<Nut> nut = Nut.GetNut();
+
         private string _name = string.Empty;
+
+        public List<string> ItemsSource { get; set; }
 
         public ICommand OnSubmitClicked { get; set; }
         public PickerVMViewModel()
@@ -22,7 +25,7 @@ namespace MyFirstProject.ViewViewModels.Controls.Picker.PickerVM
 
             OnSubmitClicked = new Command(OnSubmitClickedAsync);
 
-            ItemsSource = (from n in NutCollection select n.Name).ToList();
+            ItemsSource = (from n in nut select n.Name).ToList();
         }
 
         public string SelectedItem
@@ -42,18 +45,17 @@ namespace MyFirstProject.ViewViewModels.Controls.Picker.PickerVM
 
         private async void OnSubmitClickedAsync(object obj)
         {
+
             if (string.IsNullOrEmpty(_name.Trim()))
             {
                 await Application.Current.MainPage.DisplayAlert(Titles.PickerVMTitle, "Select an Option First", "OK");
                 return;
             }
-            else
-            {
-                await Application.Current.MainPage.Navigation.PushAsync(new PickerResultView("Picker ViewModel", _name));
-            }            
-        }
 
-        public List<string> ItemsSource { get; set; }
+            var result = nut.FirstOrDefault(x => x.Name.Equals(SelectedItem));
+
+            await Application.Current.MainPage.Navigation.PushAsync(new PickerResultView(result.Name, result.Image, result.Description, "Picker VM"));
+        }
 
     }
 }

@@ -71,7 +71,9 @@
         public static string PickerResultTitle { get; } = "Result";
 
         public static string DateTimePickerTitle { get; } = "Date and Time Picker";
-        
+        public static string DatePickerXamlTitle { get; } = "Date Picker XAML";
+        public static string DatePickerVmTitle { get; } = "Date Picker VM";
+
 
 
 

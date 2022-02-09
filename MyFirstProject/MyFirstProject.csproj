@@ -14,12 +14,32 @@
     <None Remove="Images\iconsdelete.png" />
     <None Remove="Images\iconsedit.png" />
     <None Remove="Images\nut.jpg" />
+    <None Remove="Images\PeopleImages\Blue.png" />
+    <None Remove="Images\PeopleImages\Blue.webp" />
+    <None Remove="Images\PeopleImages\Orange.webp" />
+    <None Remove="Images\PeopleImages\White.webp" />
+    <None Remove="Images\PeopleImages\Yellow 2.webp" />
+    <None Remove="Images\PeopleImages\Yellow.webp" />
+    <None Remove="Images\People\Blue.webp" />
+    <None Remove="Images\People\Orange.webp" />
+    <None Remove="Images\People\White.webp" />
+    <None Remove="Images\People\Yellow 2.webp" />
+    <None Remove="Images\People\Yellow.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="Images\PeopleImages\Blue.webp" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Images\iconsdelete.png" />
     <EmbeddedResource Include="Images\iconsedit.png" />
     <EmbeddedResource Include="Images\nut.jpg" />
+    <EmbeddedResource Include="Images\PeopleImages\Blue.png" />
+    <EmbeddedResource Include="Images\PeopleImages\Orange.webp" />
+    <EmbeddedResource Include="Images\PeopleImages\White.webp" />
+    <EmbeddedResource Include="Images\PeopleImages\Yellow 2.webp" />
+    <EmbeddedResource Include="Images\PeopleImages\Yellow.webp" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,7 +48,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\People\Blue.webp" />
+    <Resource Include="Images\People\Orange.webp" />
+    <Resource Include="Images\People\White.webp" />
+    <Resource Include="Images\People\Yellow 2.webp" />
+    <Resource Include="Images\People\Yellow.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="ViewViewModels\Controls\ControlsMenuView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Controls\DateTimePicker\DatePickerVM\DatePickerVmView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewViewModels\Controls\DateTimePicker\DatePickerXaml\DatePickerXamlView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ViewViewModels\Controls\DateTimePicker\DateTimePickerView.xaml">

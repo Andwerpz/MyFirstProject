@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstProject.ViewViewModels.Controls.DateTimePicker.DatePickerXaml.DatePickerXamlView"
+             Title="{Binding Title}">
+    
+        <StackLayout Padding="20"
+                     VerticalOptions="CenterAndExpand">
+            
+            <Label Text="Start Date"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalOptions="CenterAndExpand" />
+
+        <DatePicker MinimumDate="01/01/2021"
+                    Date="01/01/2021"
+                    DateSelected="StartDatePicker_DateSelected"
+                    InputTransparent="False"/>
+
+        <Frame Padding="1"
+               BackgroundColor="Black"/>
+
+        <Label Text="End Date"
+               FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalOptions="CenterAndExpand"/>
+
+        <DatePicker MinimumDate="01/01/2021"
+                    Date="01/01/2021"
+                    DateSelected="EndDatePicker_DateSelected"
+                    InputTransparent="False"/>
+
+        <Button Text="Submit"
+                FontAttributes="Bold"
+                FontSize="Large"
+                Clicked="Button_Clicked"/>
+
+    </StackLayout>
+    
+</ContentPage>

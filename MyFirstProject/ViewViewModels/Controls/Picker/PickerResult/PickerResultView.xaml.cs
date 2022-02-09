@@ -11,10 +11,10 @@ namespace MyFirstProject.ViewViewModels.Controls.Picker.PickerResult
 {
     public partial class PickerResultView : ContentPage
     {
-        public PickerResultView(string source, string name)
+        public PickerResultView(string name, ImageSource image, string description, string source)
         {
             InitializeComponent();
-            BindingContext = new PickerResultViewModel(source, name);
+            BindingContext = new PickerResultViewModel(name, image, description, source);
         }
     }
 }

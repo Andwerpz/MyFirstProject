@@ -9,35 +9,20 @@ namespace MyFirstProject.ViewViewModels.Controls.Picker.PickerResult
 {
     public class PickerResultViewModel : BaseViewModel
     {
-        List<Nut> NutCollection = Nut.GetNut();
-
-        Nut selectedNut = new Nut();
-        public PickerResultViewModel(string source, string name)
+        public PickerResultViewModel(string name, ImageSource image, string description, string source)
         {
             Title = name;
             SourcePage = source;
-            GetNut(name);
 
-            ImageSource = selectedNut.Image;
-            Description = selectedNut.Description;
+            ImageSource = image;
+            Description = description;
 
         }
         public string SourcePage { get; set; }
         public ImageSource ImageSource { get; set; }
         public string Description { get; set; }
 
-        private void GetNut(string name)
-        {
-            foreach(Nut nut in NutCollection)
-            {
-                if (nut.Name == name)
-                {
-                    selectedNut = nut;
-                    return;
-                }
-            }
-            return;
-        }
+        
 
     }
 }
