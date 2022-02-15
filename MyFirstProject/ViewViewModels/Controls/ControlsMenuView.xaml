@@ -43,7 +43,7 @@
             <Button Text="Picker"
                     Command="{Binding OnPickerClicked}"/>
 
-            <Button Text="Date And Time Picker"
+            <Button Text="Date Picker"
                     Command="{Binding OnDateTimePickerClicked}"/>
 
         </StackLayout>

@@ -12,14 +12,31 @@ namespace MyFirstProject.ViewViewModels.Controls.DateTimePicker.DatePickerVM
     {
         private string msg;
         public ICommand OnSubmitClicked { get; set; }
-        public DateTime StartDate { get; set; } = new DateTime(2021, 1, 1);
-        public DateTime EndDate { get; set; } = new DateTime(2021, 1, 1);
-        public Boolean SwitchToggled { get; set; }
         public DatePickerVmViewModel()
         {
             Title = Titles.DatePickerVmTitle;
             OnSubmitClicked = new Command(OnSubmitClickedAsync);
         }
+
+        public DateTime StartDate { get; set; } = Dates.CurrentDate;
+        public DateTime EndDate { get; set; } = Dates.CurrentDate;
+
+        public DateTime MinDate
+        {
+            get
+            {
+                return Dates.MinDate;
+            }
+        }
+
+        public DateTime MaxDate
+        {
+            get
+            {
+                return Dates.MaxDate;
+            }
+        }
+        public Boolean SwitchToggled { get; set; }
 
         private async void OnSubmitClickedAsync(object obj)
         {

@@ -12,8 +12,8 @@
                    FontSize="Large"
                    HorizontalOptions="CenterAndExpand" />
 
-        <DatePicker MinimumDate="01/01/2021"
-                    MaximumDate="12/31/2022"
+        <DatePicker MinimumDate="{Binding MinDate}"
+                    MaximumDate="{Binding MaxDate}"
                     Date="01/01/2021"
                     DateSelected="StartDatePicker_DateSelected"
                     InputTransparent="False"/>
@@ -26,8 +26,8 @@
                FontSize="Large"
                HorizontalOptions="CenterAndExpand"/>
 
-        <DatePicker MinimumDate="01/01/2021"
-                    MaximumDate="12/31/2022"
+        <DatePicker MinimumDate="{Binding MinDate}"
+                    MaximumDate="{Binding MaxDate}"
                     Date="01/01/2021"
                     DateSelected="EndDatePicker_DateSelected"
                     InputTransparent="False"/>
