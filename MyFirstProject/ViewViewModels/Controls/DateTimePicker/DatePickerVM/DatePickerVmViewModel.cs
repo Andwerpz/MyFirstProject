@@ -12,8 +12,9 @@ namespace MyFirstProject.ViewViewModels.Controls.DateTimePicker.DatePickerVM
     {
         private string msg;
         public ICommand OnSubmitClicked { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public DateTime StartDate { get; set; } = new DateTime(2021, 1, 1);
+        public DateTime EndDate { get; set; } = new DateTime(2021, 1, 1);
+        public Boolean SwitchToggled { get; set; }
         public DatePickerVmViewModel()
         {
             Title = Titles.DatePickerVmTitle;
@@ -22,7 +23,19 @@ namespace MyFirstProject.ViewViewModels.Controls.DateTimePicker.DatePickerVM
 
         private async void OnSubmitClickedAsync(object obj)
         {
-            await Application.Current.MainPage.DisplayAlert(Titles.DatePickerVmTitle, msg, "OK");
+            if (StartDate > EndDate)
+                await Application.Current.MainPage.DisplayAlert(Titles.DatePickerVmTitle, "Start date cannot be after the end date", "OK");
+            //if the date is valid, display message with a modification if switch is toggled, or just plain if switch is not toggled
+            else
+            {
+                msg = "Start Date: " + StartDate.ToShortDateString() + ",\n End Date: " + EndDate.ToShortDateString();
+
+                if (SwitchToggled)
+                    msg += "\n Difference: " + EndDate.Subtract(StartDate).Days + " Days";
+
+                await Application.Current.MainPage.DisplayAlert(Titles.DatePickerVmTitle, msg, "OK");
+            }
+                
         }
     }
 }

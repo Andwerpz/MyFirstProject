@@ -13,8 +13,9 @@
                    HorizontalOptions="CenterAndExpand" />
 
         <DatePicker MinimumDate="01/01/2021"
+                    MaximumDate="12/31/2022"
                     Date="01/01/2021"
-                    DateSelected="DatePicker_DateSelected"
+                    DateSelected="StartDatePicker_DateSelected"
                     InputTransparent="False"/>
 
         <Frame Padding="1"
@@ -26,11 +27,21 @@
                HorizontalOptions="CenterAndExpand"/>
 
         <DatePicker MinimumDate="01/01/2021"
+                    MaximumDate="12/31/2022"
                     Date="01/01/2021"
-                    DateSelected="DatePicker_DateSelected_1"
+                    DateSelected="EndDatePicker_DateSelected"
                     InputTransparent="False"/>
 
-        <Switch IsToggled="True"/>
+        <Frame Padding="1"
+               BackgroundColor="Black"/>
+
+        <Label Text="Show Difference"
+               FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalOptions="CenterAndExpand"/>
+        
+        <Switch IsToggled="{Binding SwitchToggled}"
+                HorizontalOptions="CenterAndExpand"/>
 
         <Button Text="Submit"
                 FontAttributes="Bold"

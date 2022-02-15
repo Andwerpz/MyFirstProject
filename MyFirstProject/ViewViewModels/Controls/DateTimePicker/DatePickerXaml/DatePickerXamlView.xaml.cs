@@ -13,9 +13,9 @@ namespace MyFirstProject.ViewViewModels.Controls.DateTimePicker.DatePickerXaml
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DatePickerXamlView : ContentPage
     {
-        private DateTime _startDateSelected = new DateTime( 01 / 01 / 2021);
+        private DateTime _startDateSelected = new DateTime(2021, 1, 1);
         private DateTime _oldStartDateSelected;
-        private DateTime _endDateSelected = new DateTime(01 / 01 / 2021);
+        private DateTime _endDateSelected = new DateTime(2021, 1, 1);
         private DateTime _oldEndDateSelected;
 
         public DatePickerXamlView()

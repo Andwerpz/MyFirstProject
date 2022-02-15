@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyFirstProject.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,20 +13,21 @@ namespace MyFirstProject.ViewViewModels.Controls.DateTimePicker.DatePickerVM
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DatePickerVmView : ContentPage
     {
+        DatePickerVmViewModel vm = new DatePickerVmViewModel();
         public DatePickerVmView()
         {
             InitializeComponent();
-            BindingContext = new DatePickerVmViewModel();
+            BindingContext = vm;
         }
 
-        private void DatePicker_DateSelected(object sender, DateChangedEventArgs e)
+        private void StartDatePicker_DateSelected(object sender, DateChangedEventArgs e)
         {
-            
+            vm.StartDate = e.NewDate;
         }
 
-        private void DatePicker_DateSelected_1(object sender, DateChangedEventArgs e)
+        private void EndDatePicker_DateSelected(object sender, DateChangedEventArgs e)
         {
-
+            vm.EndDate = e.NewDate;            
         }
     }
 }
